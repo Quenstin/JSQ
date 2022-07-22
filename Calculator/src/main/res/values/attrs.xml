@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomImageButton">
+        <attr name="tint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FunctionFlowLayout">
+        <attr name="horizontalGap" format="dimension"/>
+        <attr name="isDistributionWhiteSpacing" format="boolean"/>
+        <attr name="verticalGap" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalculatorEditText">
+        <attr name="minTextSize" format="dimension"/>
+        <attr name="maxTextSize" format="dimension"/>
+        <attr name="stepTextSize" format="dimension"/>
+        <attr name="numpad_button_background_color" format="color"/>
+        <attr name="input_background_color" format="color"/>
+        <attr name="input_text_color" format="color"/>
+        <attr name="input_cursor_color" format="color"/>
+        <attr name="output_background_color" format="color"/>
+        <attr name="output_text_color" format="color"/>
+        <attr name="clear_ripple_color" format="color"/>
+        <attr name="hamburger_color" format="color"/>
+        <attr name="function_grid_color" format="color"/>
+        <attr name="function_background_color" format="color"/>
+        <attr name="function_text_color" format="color"/>
+        <attr name="function_superscript_color" format="color"/>
+        <attr name="numpad_superscript_color" format="color"/>
+        <attr name="numpad_text_color" format="color"/>
+        <attr name="del_background_color" format="color"/>
+        <attr name="del_text_color" format="color"/>
+        <attr name="numpad_grid_color" format="color"/>
+        <attr name="sto_highlight_color" format="color"/>
+        <attr name="del_separator_color" format="color"/>
+        <attr name="pad_button_background" format="reference"/>
+        <attr name="pad_button_advanced_background" format="reference"/>
+        <attr name="pad_button_background_red" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TYTextView">
+        <attr name="borderDir" format="string"/>
+        <attr name="TYBorderWidth" format="integer"/>
+    </declare-styleable>
+</resources>

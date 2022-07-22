@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/equation_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:gravity="center"
+                android:text="(x"
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+
+            <LinearLayout
+                android:id="@+id/equation_left_up_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_dotted_stroke"
+                    android:gravity="center"
+                    android:text=" -k "
+                    android:textColor="@color/white"
+                    android:textSize="22.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:gravity="center"
+                android:text=")²"
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:background="@color/input_layer_1_color" />
+
+        <LinearLayout
+            android:id="@+id/equation_left_down_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dotted_stroke"
+                android:gravity="center"
+                android:text=" a² "
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@+id/linear1"
+        android:gravity="center_vertical"
+        android:text="－"
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:gravity="center"
+                android:text="(y"
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+
+            <LinearLayout
+                android:id="@+id/equation_right_up_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_dotted_stroke"
+                    android:gravity="center"
+                    android:text=" -h "
+                    android:textColor="@color/white"
+                    android:textSize="22.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:gravity="center"
+                android:text=")²"
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:background="@color/input_layer_1_color" />
+
+        <LinearLayout
+            android:id="@+id/equation_right_down_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dotted_stroke"
+                android:gravity="center"
+                android:text=" b² "
+                android:textColor="@color/white"
+                android:textSize="22.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@+id/linear2"
+        android:gravity="center_vertical"
+        android:text="=1"
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+</RelativeLayout>

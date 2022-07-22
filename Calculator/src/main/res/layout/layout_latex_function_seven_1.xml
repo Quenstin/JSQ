@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/equation_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/tv_equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:gravity="bottom"
+        android:text="(x"
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@+id/equation_left_root"
+        android:gravity="bottom"
+        android:text=")²+(y"
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+
+    <LinearLayout
+        android:id="@+id/equation_middle_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@+id/tv1"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dotted_stroke"
+            android:gravity="center"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:text="-b"
+            android:textColor="@color/white"
+            android:textSize="22.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/equation_left_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@+id/tv_equation"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dotted_stroke"
+            android:gravity="center"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:text="-a"
+            android:textColor="@color/white"
+            android:textSize="22.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@+id/equation_middle_root"
+        android:gravity="bottom"
+        android:text=")²="
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+
+    <LinearLayout
+        android:id="@+id/equation_right_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@+id/tv2"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dotted_stroke"
+            android:gravity="center"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:text="r²"
+            android:textColor="@color/white"
+            android:textSize="22.0dip" />
+    </LinearLayout>
+</RelativeLayout>

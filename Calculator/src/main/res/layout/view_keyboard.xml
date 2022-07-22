@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/clear"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackground"
+            android:paddingTop="9.0dip"
+            android:paddingBottom="9.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_keyboard_clear"
+            android:tag="@string/keyboard_clear" />
+
+        <ImageButton
+            android:id="@+id/cursor_left"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackground"
+            android:paddingTop="9.0dip"
+            android:paddingBottom="9.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_keyboard_left"
+            android:tag="@string/keyboard_left" />
+
+        <ImageButton
+            android:id="@+id/cursor_right"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackground"
+            android:paddingTop="9.0dip"
+            android:paddingBottom="9.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_keyboard_right"
+            android:tag="@string/keyboard_right" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackground"
+            android:paddingTop="9.0dip"
+            android:paddingBottom="9.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:tag="@string/keyboard_backspace" />
+
+        <ImageButton
+            android:id="@+id/equal"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackground"
+            android:paddingTop="9.0dip"
+            android:paddingBottom="9.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_keyboard_equal"
+            android:tag="@string/keyboard_btn_equal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/keyboard_grid_bg" />
+        
+    </FrameLayout>
+</LinearLayout>

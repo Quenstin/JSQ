@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sct_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="1.0dip">
+
+    <TextView
+        android:id="@+id/sct_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip" />
+
+    <TextView
+        android:id="@+id/sct_left_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0.25dip"
+        android:text="("
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip" />
+
+    <LinearLayout
+        android:id="@+id/sct_horizontal_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginBottom="2.25dip"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="16.399994dip"
+            android:layout_height="21.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sct_right_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0.25dip"
+        android:text=")"
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip" />
+</LinearLayout>

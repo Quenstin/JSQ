@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="一元一次函数"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <com.example.calculator.widget.CustomImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/keyboard_button_bg_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_equation1"
+                android:tag="@string/keyboard_equa1"
+                app:tint="@color/keyboard_button_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="反比例函数"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <com.example.calculator.widget.CustomImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/keyboard_button_bg_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_equation2"
+                android:tag="@string/keyboard_equa2"
+                app:tint="@color/keyboard_button_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="一元二次函数"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation3"
+                    android:tag="@string/keyboard_equa3"
+                    app:tint="@color/keyboard_button_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/edit_color1" />
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation4"
+                    android:tag="@string/keyboard_equa4"
+                    app:tint="@color/keyboard_button_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="指数函数"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <com.example.calculator.widget.CustomImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/keyboard_button_bg_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_equation5"
+                android:tag="@string/keyboard_equa5"
+                app:tint="@color/keyboard_button_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="对数函数"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <com.example.calculator.widget.CustomImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/keyboard_button_bg_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_equation6"
+                android:tag="@string/keyboard_equa6"
+                app:tint="@color/keyboard_button_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="圆"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation7"
+                    android:tag="@string/keyboard_equa7"
+                    app:tint="@color/keyboard_button_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/edit_color1" />
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation8"
+                    android:tag="@string/keyboard_equa8"
+                    app:tint="@color/keyboard_button_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="椭圆"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation9"
+                    android:tag="@string/keyboard_equa9"
+                    app:tint="@color/keyboard_button_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/edit_color1" />
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation10"
+                    android:tag="@string/keyboard_equa10"
+                    app:tint="@color/keyboard_button_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="双曲线"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation11"
+                    android:tag="@string/keyboard_equa11"
+                    app:tint="@color/keyboard_button_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/edit_color1" />
+
+                <com.example.calculator.widget.CustomImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/keyboard_button_bg_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_equation12"
+                    android:tag="@string/keyboard_equa12"
+                    app:tint="@color/keyboard_button_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="抛物线"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_color1" />
+
+            <com.example.calculator.widget.CustomImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/keyboard_button_bg_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_equation13"
+                android:tag="@string/keyboard_equa13"
+                app:tint="@color/keyboard_button_selector" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/edit_color1" />
+    </LinearLayout>
+</ScrollView>

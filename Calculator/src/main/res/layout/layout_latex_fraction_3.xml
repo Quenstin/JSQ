@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fraction_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1.0dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fraction_up_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="13.799988dip"
+            android:layout_height="16.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:background="@color/input_layer_3_color" />
+
+    <LinearLayout
+        android:id="@+id/fraction_down_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="13.799988dip"
+            android:layout_height="16.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+</LinearLayout>

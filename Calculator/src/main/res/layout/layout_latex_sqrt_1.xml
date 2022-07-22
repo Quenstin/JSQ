@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sqrt_root"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/sqrt_up_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="14.0dip"
+        app:layout_constraintBottom_toBottomOf="@+id/sqrt_up_root"
+        app:layout_constraintRight_toRightOf="@+id/sqrt_up_root" />
+
+    <ImageView
+        android:id="@+id/sqrt_img"
+        android:layout_width="16.0dip"
+        android:layout_height="0.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_sqrt"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_datum"
+        app:layout_constraintLeft_toLeftOf="@+id/datum"
+        app:layout_constraintTop_toTopOf="@+id/datum" />
+
+    <LinearLayout
+        android:id="@+id/sqrt_down_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toRightOf="@+id/sqrt_img"
+        app:layout_constraintTop_toTopOf="@+id/sqrt_img">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginTop="2.0dip"
+        app:layout_constraintLeft_toLeftOf="@+id/sqrt_down_root"
+        app:layout_constraintTop_toBottomOf="@+id/sqrt_down_root" />
+
+    <View
+        android:id="@+id/right_datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="2.0dip"
+        app:layout_constraintLeft_toRightOf="@+id/sqrt_down_root"
+        app:layout_constraintTop_toTopOf="@+id/sqrt_img" />
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:background="@color/input_layer_1_color"
+        app:layout_constraintLeft_toLeftOf="@+id/sqrt_down_root"
+        app:layout_constraintRight_toLeftOf="@+id/right_datum"
+        app:layout_constraintTop_toTopOf="@+id/sqrt_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>

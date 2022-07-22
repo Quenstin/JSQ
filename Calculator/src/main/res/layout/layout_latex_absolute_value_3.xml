@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/absolute_value_root"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/datum_top"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="2.0dip"
+        android:layout_marginBottom="2.6999817dip"
+        app:layout_constraintBottom_toTopOf="@+id/absolute_value_horizontal_root"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <View
+        android:id="@+id/datum_bottom"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginTop="2.6999817dip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/absolute_value_horizontal_root" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:background="@color/input_layer_3_color"
+        app:layout_constraintBottom_toBottomOf="@+id/datum_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/datum_top" />
+
+    <LinearLayout
+        android:id="@+id/absolute_value_horizontal_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/datum_top"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="13.799988dip"
+            android:layout_height="16.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:background="@color/input_layer_3_color"
+        app:layout_constraintBottom_toBottomOf="@+id/datum_bottom"
+        app:layout_constraintLeft_toRightOf="@+id/absolute_value_horizontal_root"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/datum_top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

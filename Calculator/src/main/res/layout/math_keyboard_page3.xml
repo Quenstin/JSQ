@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_greater"
+            android:tag="@string/keyboard_greater"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_ge"
+            android:tag="@string/keyboard_ge"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_less"
+            android:tag="@string/keyboard_less"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_le"
+            android:tag="@string/keyboard_le"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_int"
+            android:tag="@string/keyboard_integ"
+            app:tint="@color/keyboard_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_i"
+            android:tag="i"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_c"
+            android:tag="@string/keyboard_c"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_b"
+            android:tag="@string/keyboard_b"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_z"
+            android:tag="@string/keyboard_z"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_a"
+            android:tag="@string/keyboard_a"
+            app:tint="@color/keyboard_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_lim"
+            android:tag="lim"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_inf"
+            android:tag="infinity"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_equal"
+            android:tag="@string/keyboard_equal"
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+
+        <com.example.calculator.widget.CustomImageButton
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/keyboard_button_bg_selector"
+            android:scaleType="centerInside"
+            android:tag=""
+            app:tint="@color/keyboard_button_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/divider" />
+</LinearLayout>

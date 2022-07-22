@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/permutation_combination_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="1.0dip">
+
+    <TextView
+        android:id="@+id/permutation_combination_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textSize="28.0dip"
+        app:layout_constraintBottom_toBottomOf="@+id/datum"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/permutation_combination_up_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toTopOf="@+id/permutation_combination_down_root"
+        app:layout_constraintLeft_toRightOf="@+id/permutation_combination_text">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/permutation_combination_down_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/permutation_combination_text">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginTop="18.0dip"
+        app:layout_constraintLeft_toRightOf="@+id/permutation_combination_text"
+        app:layout_constraintTop_toBottomOf="@+id/permutation_combination_up_root" />
+</androidx.constraintlayout.widget.ConstraintLayout>

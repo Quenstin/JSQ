@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/log_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="1.0dip">
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log"
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip"
+        app:layout_constraintBottom_toBottomOf="@+id/log_right_root"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/log_left_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toRightOf="@+id/log"
+        app:layout_constraintTop_toTopOf="@+id/datum">
+
+        <TextView
+            android:layout_width="16.399994dip"
+            android:layout_height="21.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10.5dip"
+        app:layout_constraintBottom_toBottomOf="@+id/log_right_root"
+        app:layout_constraintLeft_toLeftOf="@+id/log_right_root" />
+
+    <TextView
+        android:id="@+id/log_right_left_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1.0dip"
+        android:text="("
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_datum"
+        app:layout_constraintLeft_toRightOf="@+id/log_left_root" />
+
+    <LinearLayout
+        android:id="@+id/log_right_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toRightOf="@+id/log_right_left_bracket"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="16.399994dip"
+            android:layout_height="21.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_right_right_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1.0dip"
+        android:text=")"
+        android:textColor="@color/input_layer_2_color"
+        android:textSize="22.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_datum"
+        app:layout_constraintLeft_toRightOf="@+id/log_right_root" />
+
+    <View
+        android:id="@+id/bottom_datum"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_marginTop="2.0dip"
+        app:layout_constraintLeft_toLeftOf="@+id/log_right_root"
+        app:layout_constraintTop_toBottomOf="@+id/log_right_root" />
+</androidx.constraintlayout.widget.ConstraintLayout>

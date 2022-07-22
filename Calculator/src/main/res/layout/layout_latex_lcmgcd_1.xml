@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lcm_gcd_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lcm_gcd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="@color/input_layer_1_color"
+        android:textSize="28.0dip" />
+
+    <TextView
+        android:id="@+id/lcm_gcd_left_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="("
+        android:textColor="@color/input_layer_1_color"
+        android:textSize="28.0dip" />
+
+    <LinearLayout
+        android:id="@+id/lcm_gcd_left_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lcm_gcd_comma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text=","
+        android:textColor="@color/input_layer_1_color"
+        android:textSize="28.0dip" />
+
+    <LinearLayout
+        android:id="@+id/lcm_gcd_right_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="18.899994dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/shape_dotted_stroke" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lcm_gcd_right_bracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text=")"
+        android:textColor="@color/input_layer_1_color"
+        android:textSize="28.0dip" />
+</LinearLayout>
